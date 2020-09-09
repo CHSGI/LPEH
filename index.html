@@ -45,23 +45,81 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <!-- <h1 class="logo mr-auto"><a href="index.html"><span>Com</span>pany</a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo mr-auto"><img src="lapeonula trans.png" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li class="drop-down"><a href="index.html">Home</a>
+            <ul>
 
-          <li><a href="about.html">About Us</a>
-
+              <li><a href="#">Welcome</a></li>
+            </ul>
           </li>
 
+          <li class="drop-down"><a href="">About</a>
+            <ul>
+              <li><a href="about.html">Vision</a></li>
+              <li><a href="about.html">Mission</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="#">Energy Policy</a></li>
+              <li class="drop-down"><a href="#">Services</a>
+                <ul>
+                  <li><a href="#">Research and Studies</a></li>
+                  <li><a href="#">EPC consultancy</a></li>
+                  <li><a href="#">Advisory</a></li>
 
-          <li class="active"><a href="portfolio.html">Projects</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Trainings</a>
+            </ul>
+          </li>
 
+          <li class="drop-down"><a href="">PROJECTS</a>
+            <ul>
+              <li><a href="portfolio-details.html">Energy Ambassadors Club 2016</a></li>
+              <li><a href="portfolio-details2.html">Nigerian Energy Ambassadors 2017</a></li>
+              <li><a href="#">GoKitchy</a></li>
+              <li><a href="#">Energy Policy</a></li>
+              <li><a href="#">Upcoming projects</a>
+
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="drop-down"><a href="#">START UP</a>
+            <ul>
+              <li><a href="disposit.html">Disposit</a></li>
+              <li><a href="#">Green Mobility</a></li>
+
+
+            </ul>
+
+          </li>
+          <li class="drop-down"><a href="#">EVENTS</a>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Upcoming Trainings</a></li>
+              <li><a href="#">Upcoming Projects</a></li>
+              <li><a href="#">Related energy news around Africa</a></li>
+
+
+            </ul>
+          </li>
+          <li><a href="#">RESOURCES</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="drop-down"><a href="#">Contact</a>
+
+            <ul>
+              <li><a href="volunteer.html">Volunteer form</a></li>
+              <li><a href="contact.html">Interested in Working with us?</a></li>
+
+
+
+            </ul>
+          </li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -88,14 +146,16 @@
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Welcome to <span>La Peonular Energy Hub Ltd</span></h2>
               <p>We are an Energy Management and Renewable energy services
-                company.</p>
+                company. Experts in
+                Energy Audit and Management, Renewable Energy Project design and Implementation,
+                Research and Feasibility Studies, Trainings and Community Development Projects.</p>
               <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
           </div>
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(robin-sommer-wnOJ83k8r4w-unsplash.jpg);">
+        <!-- <div class="carousel-item" style="background-image: url(robin-sommer-wnOJ83k8r4w-unsplash.jpg);">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>La Peonular</h2>
@@ -105,7 +165,7 @@
               <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Slide 3 -->
         <div class="carousel-item" style="background-image: url(johannes-plenio-fmTde1Fe23A-unsplash.jpg);">
@@ -156,7 +216,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
             <p>
-              An Energy Management company established in March 2016, The Company has expertise in
+              An Energy Management company established in 2016, The Company has expertise in
             </p>
             <ul>
               <li><i class="ri-check-double-line"></i> Energy Audit and Management</li>
@@ -181,7 +241,7 @@
 
         <div class="section-title">
           <h2>Services</strong></h2>
-          <p>our services includes</p>
+          <p>Our services includes</p>
         </div>
 
         <div class="row">
@@ -244,7 +304,7 @@
 
         <div class="section-title">
           <h2>Trainings</strong></h2>
-          <p>We Train you on the following</p>
+          <p>We train you on the following</p>
         </div>
 
         <div class="row">
@@ -258,7 +318,7 @@
                 </svg>
                 <i class="bx bxl-dribbble"></i>
               </div>
-              <h4><a href="">Homer</a></h4>
+              <h4><a href="">HOMER</a></h4>
               <p>Learn how to carry out a mini grid hybrid design</p>
             </div>
           </div>
@@ -274,7 +334,7 @@
                 </svg>
                 <i class="bx bx-file"></i>
               </div>
-              <h4><a href="">Electrical safety in Energy</a></h4>
+              <h4><a href="">Electrical safety in Energy Projects</a></h4>
               <p>How to conduct a site study safely and professionally, and all necessary
                 safety considerations to be considered when installing solar PV systems and wind systems are addressed
                 in this course. Participants are trained on international HSE standards applicable to the RE and EE
@@ -448,9 +508,41 @@
 
           <div class="col-lg-6 col-md-4 col-6">
             <div class="client-logo">
-              <img src="DISPOSIT LOGO TR TYPOGRAPHY-01-01.png" class="img-fluid" alt="">
+              <img src="DISPOSIT LOGO TR TYPOGRAPHY-01-01.png" class="img-fluid" alt=""
+                style="position: relative; width: 150px; height: 150px;">
             </div>
           </div>
+
+          <div class="col-lg-6 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="isl.jpg" class="img-fluid" alt="" style="position: relative; width: 100px; height: 100px;">
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="staff school.PNG" class="img-fluid" alt=""
+                style="position: relative; width: 100px; height: 100px;">
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-6 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="unilag energy.png" class="img-fluid" alt=""
+                style="position: relative; width: 100px; height: 100px;">
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-4 col-6">
+            <div class="client-logo">
+              <h2> NSE, ATBU, BAUCHI
+              </h2>
+            </div>
+          </div>
+
+
 
           <!-- <div class="col-lg-3 col-md-4 col-6">
             <div class="client-logo">
@@ -503,21 +595,21 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Le Peonular</h3>
+            <h3>La Peonular</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Muliner Tower 39 Renwae Alfred Road, <br>
+              7th Floor, Ikoyi<br>
+              Lagos Nigeria <br><br>
+              <strong>Phone:</strong> +2349091678505<br>
+              <strong>Email:</strong> info@lpeh.com.ng<br>
             </p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
