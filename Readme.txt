@@ -1,6 +1,5 @@
-Thanks for downloading this template!
-
-Template Name: Company
-Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Thanks for reviewing  this code!
+Company Name:LaPeonular Energy Hub (LPEH) Nigeria Limited
+Company  URL: https://lpeh.com.ng/company-free-html-bootstrap-template/
+Author: CHSG Inc
+GitPage: https://chsgi.github.io/LPEH
