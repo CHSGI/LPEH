@@ -6,36 +6,35 @@
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  if(isset($_POST['submit'])){
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
+    $userName = $_POST['name'];
+  $userEmail = $_POST['email'];
+  $userOrg = $_POST['Organization'];
+  $userPhone = $_POST['phone'];
+  $userLocation = $_POST['location'];
+  $userMessage = $_POST['message'];
   }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
   
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+  $to = 'adelekeayobami13@gmail.com';
+  $body = "";
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+  $body .= "From: ".$userName. "\r\n";
+  $body .= "Email: ".$userEmail. "\r\n";
+  $body .= "Location: ".$userLocation. "\r\n";
+  $body .= "Organization: ".$userOrg. "\r\n";
+  $body .= "Phone: ".$userPhone. "\r\n";
+  $body .= "Message: ".$userMessage. "\r\n";
+  $headers = "From:". $userName;
 
-  echo $contact->send();
-?>
+
+  mail($to,$userEmail,$body, $headers);
+  header("Location:contact.php?mailsend");
+  ?>
+  
+
+ 
+
+  
+

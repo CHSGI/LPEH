@@ -42,13 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
-.img-fluid{
- 
-  /* width: 400px;
-  height: 1000px;
-  position: relative;
-  top: 80px; */
-}
+
 /* .mr-auto{
   width: 200px;
   height: 800px;
